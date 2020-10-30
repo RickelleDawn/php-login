@@ -9,8 +9,9 @@ session_start();
 
 <head>
     <meta name=viewport content="width=devide-width, initial-scale=1">
-    <title>PROJECT</title>
-    <link rel="stylesheet" href="style6.css">
+    <title>PHP Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/._php-favicon.svg" />
 </head>
 
 <body>
@@ -22,8 +23,8 @@ session_start();
                 </a>
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href=#>About Me</a></li>
-                    <li><a href=#>Contact</a></li>
+                    <!-- <li><a href=#>About Me</a></li>
+                    <li><a href=#>Contact</a></li> -->
                 </ul>
                 <!-- <div class="nav-spacer"> -->
 
@@ -33,7 +34,7 @@ session_start();
 
                 if (isset($_SESSION['userId'])) {
                     echo '<form action="includes/logout.inc.php" method="post">
-                    <button type="submit" name="logout-submit">Log Out</button>
+                    <button class="logout-submit" type="submit" name="logout-submit">Log Out</button>
                    </form>';
                 } else {
                     echo '<ul> <li><a href="login.php"> Login </a></li> <li><a href="signup.php"> Create an account </a></li></ul>';

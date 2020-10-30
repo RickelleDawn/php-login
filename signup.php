@@ -7,7 +7,7 @@ require "header.php"
 <main>
     <div class="signup-bg">
         <div class="wrapper">
-            <div class="log-in-form" style="height:auto;">
+            <div class="log-in-form" style="height:auto; padding:40px 20px;">
                 <h1>Sign up</h1>
                 <?php
 

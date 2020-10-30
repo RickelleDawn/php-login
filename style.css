@@ -58,12 +58,14 @@ body {
 
 .underlay {
     width: 440px;
-    height: 360px;
+    height: 320px;
     background: whitesmoke;
     z-index: 2;
     position: absolute;
     top: 22%;
     right: 15%;
+    /* -webkit-box-shadow: -9px -2px 25px 0px rgba(0,0,0,0.25); 
+    box-shadow: -9px -2px 25px 0px rgba(0,0,0,0.25); */
 }
 
 .index-about {
@@ -73,9 +75,11 @@ body {
     background: white;
     font-family: 'Times New Roman', Times, serif;
     z-index: 100;
-    position: relative;
-    /* -webkit-box-shadow: -9px -2px 25px 0px rgba(0,0,0,0.25); 
-    box-shadow: -9px -2px 25px 0px rgba(0,0,0,0.25); */
+    position: absolute;
+    top: 28%;
+    right: 10%;
+   
+    
 }
 
 .index-about p {
@@ -139,6 +143,18 @@ body {
     
 }
 
+.logout-submit {
+    display: inline;
+    /* margin: 5px; */
+    padding: 25px 25px;
+    background: none;
+    border: none;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: large;
+    cursor: pointer;
+    outline: none;
+}
+
 #main-logo {
     height: 70px;
     width: 65px;
@@ -149,7 +165,7 @@ body {
 .sign-up-form {
     width: 400px;
     height: 400px;
-    padding: 20px;
+    padding: 20px 40px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -247,3 +263,60 @@ body {
     background: whitesmoke;
 } */
 
+@media screen and (max-width: 1024px) {
+    .wrapper-main {
+        display: flex;
+        /* flex-direction: row-reverse; */
+        padding-right: 8%;
+        padding-top: 12%;
+        justify-content: center;
+    }
+    .wrapper {
+        display: flex;
+        /* flex-direction: row-reverse; */
+        padding-right: 0%;
+        padding-top: 15%;
+        justify-content: center;
+    }
+
+    .underlay {
+        width: 440px;
+        height: 320px;
+        background: whitesmoke;
+        z-index: 2;
+        position: absolute;
+        top: 18%;
+        right: 30%;
+    }
+
+    .index-about {
+        width: 400px;
+        height: fit-content;
+        padding: 20px;
+        background: white;
+        font-family: 'Times New Roman', Times, serif;
+        z-index: 100;
+        position: absolute;
+        top: 24%;
+        right: 16%;
+        font-size: larger;
+    }
+
+    .index-about p {
+        font-size: smaller;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .nav li {
+        display: inline;
+        /* margin: 5px; */
+        padding: 0px 7px;
+        background: none;
+    }
+
+}

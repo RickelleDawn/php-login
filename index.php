@@ -14,7 +14,7 @@ require "header.php"
 
                 // checks to see if a session variable is active to indicate user being logged in
                 if (isset($_SESSION['userId'])) {
-                    echo "<div class='underlay'></div><div class='index-about'><h1>Welcome " . $_SESSION['userFN'] . "!</h1><p>
+                    echo "<div class='index-about'><h1>Welcome " . $_SESSION['userFN'] . "!</h1><p>
                     Thank you so much for taking the time to create an account. In the nicest way possible, I hope you encountered
                      every error possible while trying. 😋 </p> <p>If you happened to notice anything I forgot, please let me know!</p>";
                 } else {
